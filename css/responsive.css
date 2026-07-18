@@ -1,0 +1,140 @@
+@media (max-width:1200px) {
+    .container{
+        width: 90%;
+    }
+    .hero .container,
+    .features .container{
+        grid-template-columns: 1fr;
+    }
+    .work .container{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+.work .container div:nth-child(1),
+.work .container div:nth-child(5){
+    display: none;
+}
+
+    .hero .center h1{
+        font-size: 48px;
+    }
+    .hero .tow{
+        margin-top: 70px;
+    }
+    .heading h2{
+        font-size: 32px;
+    }
+.featurees .con2,
+.price .container{
+        grid-template-columns: repeat(2 , 1fr);
+}
+footer .container .top {
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media (max-width:968px) {
+    nav .container .btn{
+        display: none;
+    }
+    nav .links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--body2-color);
+        width: 100%;
+        backdrop-filter: blur(40px);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    nav .links ul{
+        flex-direction: column;
+    }
+    nav .links.open{
+        padding: 40px 0;
+        max-height: 4000px;
+    }
+    nav .links ul li{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 1.5px solid var(--border-color);
+    }
+    #darkMode {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17px;
+    }
+    #darkMode:hover {
+    transform: translate(-50% , 0) scale(1.04);
+}
+    nav .bars{
+        display: block;
+        cursor: pointer;
+    }
+    nav .container .links .btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .review .container .right,
+    .faq .container,
+    .ready .container{
+        grid-template-columns:  1fr;
+    }
+    footer .container .top {
+    grid-template-columns: repeat(2,1fr);
+}
+.faq .container .heading, .ready .container .heading{
+    position: static;
+}
+.ready .container{
+    padding: 80px 0;
+}
+.ready .container .heading {
+    width: 100%;
+    padding:  0 30px;
+    margin-bottom: 30px;
+}
+.ready .container .heading  p{
+    width: 100%;
+}
+}
+@media (max-width:768px) {
+    .hero .center h1{
+        font-size: 48px;
+    }
+     .heading h2{
+        font-size:27px;
+    }
+        .work .container,
+        .featurees .container,
+        .featurees .con2,
+        .price .container,
+        .review .container,
+        footer .container .top {
+        grid-template-columns: 1fr;
+    }
+    footer .container .copy-right{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .ready .container .right{
+        align-items: center;
+    }
+    .ready button{
+        width: max-content;
+    }
+.work .container div:nth-child(1),
+.work .container div:nth-child(4),
+.work .container div:nth-child(2),
+.work .container div:nth-child(5){
+    display: none;
+}
+}
