@@ -41,7 +41,7 @@ for( let i = 0 ; i < faq.length; i++ ){
 }
 }
 //// end faq
-let price = document.getElementById('price')
+let price = document.getElementById('annual')
 let priceText1 = document.getElementById('priceText1')
 let priceText2 = document.getElementById('priceText2')
 let priceText3 = document.getElementById('priceText3')

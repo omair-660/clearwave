@@ -32,6 +32,21 @@ footer .container .top {
 }
 }
 @media (max-width:968px) {
+    .hero .tow .top-right{
+        right: 15px;
+    }
+    .hero .tow .bottom-left{
+        left: -6px;
+    }
+        .hero .tow {
+            width: auto;
+        }
+    .hero .con,.hero .center .btn{
+        flex-wrap: wrap;
+    }
+    .ready .container .heading h2{
+        height: auto;
+    }
     nav .container .btn{
         display: none;
     }
@@ -102,8 +117,8 @@ footer .container .top {
     padding:  0 30px;
     margin-bottom: 30px;
 }
-.ready .container .heading  p{
-    width: 100%;
+.heading  p{
+    max-width: 300px;
 }
 }
 @media (max-width:768px) {

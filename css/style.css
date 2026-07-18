@@ -474,7 +474,7 @@ footer{
     font-style: italic;
 }
 .heading p{
-    width: 520px;
+    max-width: 520px;
     color: var(--text-color);
     font-size: 17px;
     line-height: 1.6;
